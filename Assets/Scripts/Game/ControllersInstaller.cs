@@ -1,4 +1,4 @@
-using Game.Contollers;
+using Game.Controllers;
 using Reflex.Core;
 using UnityEngine;
 using GameLoop.Interfaces;
