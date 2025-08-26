@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using GameLoop.Interfaces;
 
 namespace Generator
 {
@@ -8,7 +9,7 @@ namespace Generator
     {
         private static string GetBind(TypeElement type)
         {
-            return $"\t\t\tcontainerBuilder.AddSingleton(typeof({type.Type.Name}), typeof({type.Type.Name}));\t// {type.Order:0000}";
+            return $"\t\t\tcontainerBuilder.AddSingleton(typeof({type.Type.Name}), typeof({nameof(IController)}));\t// {type.Order:0000}";
         }
         
         public static IEnumerable<string> GetBinds(IEnumerable<TypeElement> types)
