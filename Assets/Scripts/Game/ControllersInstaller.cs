@@ -21,8 +21,9 @@ namespace Game
 
 		private void Normal(ContainerBuilder containerBuilder)
 		{
-			// 0123
-			containerBuilder.AddSingleton(typeof(PlayerMovementController), typeof(IController));	// 0123
+			// 0250
+			containerBuilder.AddSingleton(typeof(PlayerMovementController), typeof(IController));	// 0250
+			containerBuilder.AddSingleton(typeof(PlayerLookController), typeof(IController));	// 0255
 		}	
     }
 }
