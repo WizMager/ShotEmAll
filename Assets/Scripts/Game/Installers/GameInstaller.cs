@@ -5,7 +5,7 @@ using Game.Services.InputService.Impl;
 using Reflex.Core;
 using UnityEngine;
 
-namespace Game
+namespace Game.Installers
 {
     public class GameInstaller : MonoBehaviour, IInstaller
     {

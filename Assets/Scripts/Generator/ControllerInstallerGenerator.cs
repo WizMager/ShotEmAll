@@ -25,7 +25,7 @@ using GameLoop.Interfaces;
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Game
+namespace Game.Installers
 {{
 	public class {name} : MonoBehaviour, IInstaller
     {{

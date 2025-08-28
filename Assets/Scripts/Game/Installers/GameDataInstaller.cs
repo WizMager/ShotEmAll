@@ -3,7 +3,7 @@ using Data.PlayerData.Impl;
 using Reflex.Core;
 using UnityEngine;
 
-namespace Game
+namespace Game.Installers
 {
     public class GameDataInstaller : MonoBehaviour, IInstaller
     {

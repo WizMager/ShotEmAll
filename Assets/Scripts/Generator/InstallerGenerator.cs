@@ -12,7 +12,7 @@ namespace Generator
 {
     public class InstallerGenerator
     {
-        private const string PATH = "Scripts/Game/";
+        private const string PATH = "Scripts/Game/Installers/";
         private static bool _inProgress;
 
         [MenuItem("Tools/Generate ControllerInstaller &g")]
