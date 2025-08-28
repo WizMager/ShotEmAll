@@ -2,6 +2,8 @@
 using Game.Services.GameSceneObjectsProvider.Impl;
 using Game.Services.InputService;
 using Game.Services.InputService.Impl;
+using Game.Services.UiManager;
+using Game.Services.UiManager.Impl;
 using Reflex.Core;
 using UnityEngine;
 
@@ -15,6 +17,7 @@ namespace Game.Installers
             containerBuilder.AddSingleton(typeof(InputService), typeof(IInputService));
             containerBuilder.AddSingleton(new GameSceneObjectsProvider(_gameSceneObjects),
                 typeof(IGameSceneObjectsProvider));
+            containerBuilder.AddSingleton(typeof(UiManager), typeof(IUiManager));
         }
     }
 }
