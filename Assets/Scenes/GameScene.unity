@@ -505,6 +505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvas: {fileID: 2294248842429224602}
   _gameHudView: {fileID: 782328063761244742, guid: 2c2dde048d03f864e878a3950287c64e, type: 3}
+  _settingsView: {fileID: 4123469411898052407, guid: 0be82000f3ce21c469246f9f03583a49, type: 3}
 --- !u!1 &1805523941
 GameObject:
   m_ObjectHideFlags: 0

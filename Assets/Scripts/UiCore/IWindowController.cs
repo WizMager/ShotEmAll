@@ -1,4 +1,4 @@
-﻿namespace Ui
+﻿namespace UiCore
 {
     public interface IWindowController
     {

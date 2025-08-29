@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
 using Reflex.Core;
 
-namespace Ui
+namespace UiCore
 {
-    public abstract class Window
+    public abstract class AWindow
     {
         private readonly List<IWindowController> _controllers = new();
-        private readonly WindowController<WindowView> _controller;
         private readonly Container _containerBuilder;
+        
+        public abstract EWindowName WindowName { get; }
 
-        protected Window(Container containerBuilder)
+        protected AWindow(Container containerBuilder)
         {
             _containerBuilder = containerBuilder;
         }

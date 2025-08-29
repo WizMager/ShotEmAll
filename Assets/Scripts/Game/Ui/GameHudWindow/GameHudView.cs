@@ -1,8 +1,8 @@
-﻿using Ui;
+﻿using UiCore;
 
 namespace Game.Ui.GameHudWindow
 {
-    public class GameHudView : WindowView
+    public class GameHudView : AWindowView
     {
         
     }
