@@ -23,7 +23,7 @@ namespace Game.Installers
 		{
 			// 0250
 			containerBuilder.AddSingleton(typeof(PlayerMovementController), typeof(IController));	// 0250
-			containerBuilder.AddSingleton(typeof(PlayerLookController), typeof(IController));	// 0255
+			containerBuilder.AddSingleton(typeof(PlayerCameraInitializeController), typeof(IController));	// 0255
 		}	
     }
 }
