@@ -19,7 +19,7 @@ namespace Game.Services.InputService.Impl
             
             _actions.Player.Movement.performed += OnMovePerformed;
             _actions.Player.Movement.canceled += OnMoveCanceled;
-            _actions.Player.Look.performed += OnLookPerformed;
+            _actions.Player.Crossfire.performed += OnLookPerformed;
         }
 
         private void OnMovePerformed(InputAction.CallbackContext context)
@@ -46,7 +46,7 @@ namespace Game.Services.InputService.Impl
         {
             _actions.Player.Movement.performed += OnMovePerformed;
             _actions.Player.Movement.canceled -= OnMoveCanceled;
-            _actions.Player.Look.performed -= OnLookPerformed;
+            _actions.Player.Crossfire.performed -= OnLookPerformed;
             
             _actions.Disable();
             _actions.Dispose();

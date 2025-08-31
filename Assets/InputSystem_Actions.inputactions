@@ -34,7 +34,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Look",
+                    "name": "Crossfire",
                     "type": "Value",
                     "id": "fb0754e8-bd40-432f-a1ef-7b1e34fa7971",
                     "expectedControlType": "",
@@ -128,7 +128,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Look",
+                    "action": "Crossfire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
