@@ -16,14 +16,24 @@ namespace Game.Installers
     {
 		public void InstallBindings(ContainerBuilder containerBuilder)
         {
+			High(containerBuilder);
 			Normal(containerBuilder);
+		}
+
+		private void High(ContainerBuilder containerBuilder)
+		{
+			// 0010
+			containerBuilder.AddSingleton(typeof(GameInitializeController), typeof(IController));	// 0010
 		}
 
 		private void Normal(ContainerBuilder containerBuilder)
 		{
-			// 0250
+			// 0240
+			containerBuilder.AddSingleton(typeof(PlayerLookController), typeof(IController));	// 0240
 			containerBuilder.AddSingleton(typeof(PlayerMovementController), typeof(IController));	// 0250
-			containerBuilder.AddSingleton(typeof(PlayerCameraInitializeController), typeof(IController));	// 0255
+
+			// 0500
+			containerBuilder.AddSingleton(typeof(PlayerCameraController), typeof(IController));	// 0500
 		}	
     }
 }
